@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <link rel="icon" href="https://play-lh.googleusercontent.com/ouL1lfSP_CyUgb5OUvI51jG3cevMfulA1GZGtS63r3Xfa8STYiIxq6KiY3PkMc6PcTk">
+        <link rel="stylesheet" href="styles.css">
+        <title>Calculadora de IMC</title>
+    </head>
+    <body>
+        <form action="#" method="get" enctype="application/x-www-form-urlencoded" class="calculadora">
+            <fieldset class="borda">
+                <div class="tela"><h1 class="Resultado"></h1></div>
+
+                <h1>Qual sua altura</h1>
+                <input type="text" name="altura" required placeholder="Altura" class="altura" maxlength="4" onkeypress="formatar('#.##', this)">
+
+                <h1>Qual seu peso</h1>
+                <input type="text" name="peso" required placeholder="Peso" class="peso" maxlength="3" onkeypress="formatar('##', this)">
+
+                <button type="button" class="submit">Submit</button>
+
+                <input type="reset" value="reset" class="reset">
+            </fieldset>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
